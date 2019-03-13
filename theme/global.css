@@ -1,0 +1,364 @@
+/***************************************************************************************************************************************
+ * Copyright 2017 Grant Alexander
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
+ * (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ ****************************************************************************************************************************************/
+
+.mainForm {
+   border-collapse:collapse;
+}
+
+.header {
+   font-size:100px;
+   line-height:100px;
+   text-align:left;
+   vertical-align:middle;
+   font-family:times;
+   color: #ffffff;
+   background-color: #1a6a0d;
+   padding:5px;
+}
+
+.body {
+	padding:3px;
+	background-color:#ffffff;
+	min-height:900px;
+}
+
+.navBar {
+   font-size:20px;
+   color: #208a2a;
+   padding: 0px;
+   font-weight: bold;
+   font-family: Monospace;
+}
+
+.navButton {
+   display:inline-block;
+   text-align:center;
+   vertical-align:middle;
+   background-color: #208a2a;
+   height:50px;
+   line-height:50px;
+   color: #ffffff;
+   cursor: pointer;
+   width:25%;
+   padding:0px;
+}
+
+body {
+   display:block;
+   color: #254b33;
+   text-align:justify;
+   vertical-align:top;
+   padding: 3px;
+   height: 800px;
+   background-color:#003d04;
+}
+
+.newsTitle {
+	color: #224928;
+	padding:0px;
+	display: inline-block;
+	font-family: serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.bodyDivider {
+	border-style: solid;
+	border-color: #208a2a;
+	border-width: 3px;
+}
+
+.newsIcons {
+	display: inline-block;
+	width:40px;
+	height:40px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #224928;
+}
+
+.newsInfo {
+	color: #919191;
+	font-style: italic;
+	font-size: 10px;
+	font-family: serif;
+	display: inline-block;
+	height: 50px;
+	vertical-align: top;
+}
+
+.newsInfoBreak {
+	height: 4px;
+}
+
+.pageNav {
+	border:none;
+	padding:0;
+	display:block;
+	width:100%;
+	vertical-align:bottom;
+	text-align:center;
+}
+
+.previousPage {
+	border:solid black;
+	display:inline-block;
+	border-color:#224928;
+	border-left-width: 2px;
+	border-right-width: 0;
+	border-top-width:0;
+	border-bottom-width:2px;
+	transform: rotate(45deg);
+	padding: 3px;
+	-webkit-transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.nextPage {
+	border: solid black;
+	border-color: #224928;
+	display: inline-block;
+	border-right-width:2px;
+	border-top-width:2px;
+	border-bottom-width:0;
+	border-left-width:0;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	padding: 3px;
+	cursor: pointer;
+}
+
+.currentPage {
+	display:inline-block;
+}
+
+.thumb {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	vertical-align:bottom;
+	border: solid;
+	border-width:2px;
+	border-color: #208a2a;
+	cursor: pointer;
+}
+
+.thumbTooltip {
+	opacity: 50%;
+	display: inline-block;
+	height: 50px;
+	width: 100%;
+	background-color: #208a2a;
+	color: white;
+}
+
+.pageStorage {
+	font-size:1em;
+	color: #FFFFFF;
+	display: none;
+}
+
+.table {
+	padding:0px;
+	vertical-align: top;
+	background: #c3a36a;
+	width:50%;
+	display:inline-block;
+}
+
+.tableHeader {
+	background-color: #644e28;
+	font-family: Monospace;
+	color: #f4e0bb;
+	font-size:20px;
+	font-weight:bold;
+	padding:3px;
+}
+
+.tableColumnHeader {
+	background-color: #c3a36a;
+	color: #f4e0bb;
+	font-family: Monospace;
+	font-size:20px;
+	font-weight:bold;
+	padding:3px;
+}
+
+.tableCell {
+	padding:3px;
+	background-color: #c3a36a;
+	color: #644e28;
+}
+
+.comboboxTableCell {
+	padding:3px;
+	background-color: #c3a36a;
+	color: #644e28;
+}
+
+.tableFancyCell {
+	background-color: #c3a36a;
+	color: #FFFFFF;
+	font-family: Monospace;
+	font-size:20px;
+	font-weight:bold;
+	padding:3px;
+}
+
+.contactText {
+	width:100%;
+	height:30px;
+	color:#644e28;
+	resize:none;
+	background-color:#f4e0bb;
+	border:none;
+}
+
+.contactTextArea {
+	width:100%;
+	height:500px;
+	color:#644e28;
+	resize:none;
+	background-color:#f4e0bb;
+	border:none;
+}
+
+.contactSelect {
+	width:100%;
+	height:30px;
+	color:#644e28;
+	resize:none;
+	background-color:#f4e0bb;
+	border:none;
+}
+
+.comboboxButton {
+	display:inline-block;
+	width:50px;
+	border:none;
+	height:30px;
+	padding:1px;
+	text-align: center;
+	background-color:#f4e0bb;
+	vertical-align:middle;
+}
+
+.combobox {
+	padding: 0px;
+	width: 100%;
+}
+
+.comboboxDropdown {
+	display:block;
+	position:absolute;
+	background-color:#c3a36a;
+	color:#644e28;
+}
+
+.comboboxText {
+	display:inline-block;
+	width:calc(100% - 54px);
+	height:30px;
+	background-color:#f4e0bb;
+	border: none;
+	vertical-align:middle;
+}
+
+.submit {
+	background-color:#644e28;
+	color:#f4e0bb;
+	width:50%;
+	font-family: Monospace;
+	font-weight:bold;
+	font-size:20px;
+	height:30px;
+	border:none;
+}
+
+.submit:hover, .clear:hover {
+	background-color:#b8954b;
+	color:#644e28;
+}
+
+.clear {
+	background-color:#644e28;
+	color:#f4e0bb;
+	width:50%;
+	font-family: Monospace;
+	font-weight:bold;
+	font-size:20px;
+	height:30px;
+	border:none;
+}
+
+.previewPane {
+	width: 49%;
+	display:inline-block;
+	background-color:ghostwhite;
+}
+
+a:visited {
+  color: #208a2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link {
+  color: #208a2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3fd227;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active {
+  color: #208a2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.titleLink:visited {
+  color: #208a2a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a.titleLink:link {
+  color: #208a2a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a.titleLink:hover {
+  color: #3fd227;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a.titleLink:active {
+  color: #208a2a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+}
+
